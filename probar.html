@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 480px;
+            height: 480px;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(80, 1fr);
+            grid-template-rows: repeat(80,1fr);
+        }
+        #container div {
+            border: 1px solid black;
+        }
+        .marcado {
+            background-color: black;
+        }
+    </style>
+</head>
+<body> 
+    <div id="container">
+    </div>
+
+    <script>
+      // creo todos los divs x*y total que van organizados en grid
+      const contenedor=document.querySelector('#container');
+      for (let i =1; i<=6400; i++) {
+        let cuadro = document.createElement('div');
+        contenedor.appendChild(cuadro);
+      }
+      let itemWait = document.querySelectorAll('#container div');
+        itemWait.forEach(cuadroListen => 
+        cuadroListen.addEventListener('mouseover', (e)=> 
+        e.target.classList="marcado"
+        )
+        );
+
+
+    </script>
+</body>
+</html>
