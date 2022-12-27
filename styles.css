@@ -1,0 +1,67 @@
+        body{
+        background-color: beige;
+        }
+
+        h1{
+        text-align: center;   
+        }
+        #box {
+            display: flex;
+            max-width: 680px;
+            margin-top:50px;
+            margin-left: auto;
+            margin-right: auto;
+            gap: 15px;
+        }
+        #tools {
+            width: 60px;
+            text-align:center;
+            align-items: flex-end;
+        }
+        #container {
+            background-color: white;
+            width: 600px;
+            height: 600px;
+            display: grid;
+            box-shadow: 0in;
+            border-radius: 15px;
+        }
+
+        .marcado {
+            background-color: black;
+        }
+        button {
+        
+            color: white;
+            font-weight: 800;
+            background-color: rgb(124, 123, 123);
+            border: none;
+            margin:10px auto 10px auto ;
+            display:block;
+       
+        } 
+        button:hover {
+            border-radius: 50%;
+            background-color: rgb(185, 212, 130);
+            color: rgb(190, 135, 190);
+        }
+
+        button#L{    
+            width: 40px;
+            height: 40px;
+
+        }
+        button#M{    
+            width: 30px;
+            height: 30px;
+
+        }
+        button#S{    
+            width: 20px;
+            height: 20px;
+        }
+        .on {
+            background-color: yellowgreen !important;
+            color: fuchsia !important;
+            border-radius: 50%;
+            }
