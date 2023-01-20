@@ -38,10 +38,10 @@
             border: none;
             margin:10px auto 10px auto ;
             display:block;
-       
+            border-radius: 50%;
         } 
         button:hover {
-            border-radius: 50%;
+            
             background-color: rgb(185, 212, 130);
             color: rgb(190, 135, 190);
         }
@@ -65,3 +65,43 @@
             color: fuchsia !important;
             border-radius: 50%;
             }
+        p{
+            text-align: center;
+            vertical-align: bottom;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+        }
+
+        .tooltip {
+            position: relative;
+          }
+          
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color:white;
+            color: rgb(80, 78, 78);
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+          
+            /* Position the tooltip */
+            position: absolute;
+            left:-115px;
+            top:-9px;
+          }
+        .tooltip .tooltiptext::after {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            left: 100%; /* To the right of the tooltip */
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent white;
+        }
+          
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+          }

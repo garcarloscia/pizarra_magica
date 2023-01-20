@@ -7,19 +7,31 @@
     <title>Pizarra Mágica</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <style>
+
+
+
+    </style>
 </head>
 <body> 
     <div id="box">
         <div id="tools">
-            <button id="S" value=100>S</button>
-            <button id="M" value=60>M</button>
-            <button id="L" value=30>L</button>
-
+            <div class="tooltip"><span class="tooltiptext">&#9998;<br>SM</span>
+              <button id="S" value=100></button>
+            </div>
+            <div class="tooltip"><span class="tooltiptext">&#9998;<br>MD</span> 
+            <button class="tooltip" id="M" value=60></button>
+            </div>
+            <div class="tooltip"><span class="tooltiptext">&#9998;<br>LG</span>
+            <button class="tooltip"id="L" value=30></button>
+            </div>
+            
         </div>
 
         <div id="container">
         </div>
    </div>
+   <p>garCARLOScia</p>
 
 </body>
 </html>
