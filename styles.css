@@ -36,9 +36,9 @@
             font-weight: 800;
             background-color: rgb(124, 123, 123);
             border: none;
-            margin:10px auto 10px auto ;
-            display:block;
             border-radius: 50%;
+            margin-top: 10px;
+            margin-bottom:10px;
         } 
         button:hover {
             
@@ -75,6 +75,9 @@
 
         .tooltip {
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
           
         .tooltip .tooltiptext {
@@ -89,7 +92,6 @@
             /* Position the tooltip */
             position: absolute;
             left:-115px;
-            top:-9px;
           }
         .tooltip .tooltiptext::after {
             content: " ";
